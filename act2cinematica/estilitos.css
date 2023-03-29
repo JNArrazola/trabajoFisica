@@ -1,0 +1,83 @@
+.hidden{
+    display: none;
+}
+
+.imagenes{
+    max-width: 300px;
+    min-width: 150px;
+    min-height: 200px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    /* align-items: center; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 10s ease infinite;
+            animation: AnimateBG 10s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.app{
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.imagenes a {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.imagenes a img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 15px;
+}
