@@ -4,7 +4,7 @@ let fuerza = document.getElementById("fuerza")
 let aceleracion = document.getElementById("aceleracion")
 
 form.addEventListener("submit",(e)=>{
-
+    //se verifica que todos los datos sean validos ( que no falte ninguno y que no se divida entre 0)
     let contador = 0
 
     if (masa.value!=""){

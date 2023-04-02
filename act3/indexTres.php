@@ -22,6 +22,7 @@
              return true;
             }
         -->
+        //este script se encarga de que no puedas ingresar números decimales o negativos en el input de número de vectores
         </script>
 
     <div class="father" id="divUno">

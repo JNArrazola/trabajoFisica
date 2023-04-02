@@ -5,6 +5,7 @@ button.addEventListener("click", () => {
 
   if (vectores < 1 || vectores > 30) {
     alert("Ingrese vectores válidos");
+    //si el número de vectores no es válido, entonces se envía un alert
   } else {
     const divUno = document.getElementById("divUno");
     divUno.classList.add("hidden");
@@ -34,9 +35,11 @@ button.addEventListener("click", () => {
           i +
           '" step="any">'
       );
+
+      //este ciclo for crea todos los inputs que el usuario requiera
     }
 
-    //******crear input con el valor de vectores*********** */
+    //******crear input con el valor de vectores para mandarlo al php*********** */
     document.write(
       '<input type="number" name="numDeVectores" class="hidden" id="numDeVectores">'
     );
@@ -59,7 +62,7 @@ button.addEventListener("click", () => {
 
     enviarVectores.addEventListener("submit", (e) => {
       bool = true;
-
+      //aqui se verifica que ningún input de los generados se encuentre vacío
       for (let i = 1; i <= vectores; i++) {
         let vectorCheck = document.getElementById("vector" + i + "").value;
         let angleCheck = document.getElementById("angulo" + i + "").value;
@@ -78,6 +81,7 @@ button.addEventListener("click", () => {
       if (bool == false) {
         alert("Verifica tus datos");
         e.preventDefault();
+        //si está vacío, entonces se enviará un alert que te avisará que debes verificar tus datos
       }
     });
   }
